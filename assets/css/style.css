@@ -96,6 +96,8 @@ header nav ul li a {
 	align-items: center;
 	justify-content: center;
 	background-image: url('../images/dancers-photo.png');
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top: 3.875rem;
 	text-align: center;
@@ -136,8 +138,9 @@ header nav ul li a {
 	align-items: flex-end;
 	justify-content: flex-end;
 	background-image: url('../images/graffiti-photo.png');
+	background-position: center;
 	background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 }
 
 /* Sub banner Home*/
@@ -173,8 +176,9 @@ header nav ul li a {
 	align-items: flex-end;
 	justify-content: flex-end;
 	background-image: url('../images/fire-photo.png');
+	background-position: center;
 	background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 }
 
 #banner-three-home .banner-text {
@@ -187,16 +191,18 @@ header nav ul li a {
 	align-items: flex-end;
 	justify-content: flex-end;
 	background-image: url('../images/jump-photo.png');
+	background-position: center;
 	background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 }
 
 /* Footer (used on all pages!) */
 
 footer {
 	background-image: url('../images/party-photo.png');
+	background-position: center;
 	background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	flex-direction: column;
 }
 
@@ -231,8 +237,64 @@ footer a {
 	width: 45%;
 }
 
-/* MEDIA QUERIES */
+/*** MEDIA QUERIES ***/
 
+/* Tablet size */
 @media only screen and (max-width: 1024px) {
+	
+	/* banners */
+	#banner-home .banner-text {
+		width: 31.25rem;
+	}
 
+	.sub-banner .banner-text {
+		margin-top: 20rem;
+		width: 100%;
+	}
+
+	.sub-banner .banner-text .text{
+		margin-top: 1.875rem;
+		margin-right: 3.4375rem;
+		margin-left: 1.875rem;
+	}
+
+	.sub-banner .banner-text h2 {
+		font-size: 1.875rem;
+		line-height: 1.4;
+		margin-bottom: 0.625rem;
+	}
+
+	.sub-banner .banner-text p {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	/* Footer */
+	footer nav {
+		justify-content: center;
+		padding: 0.875rem 0;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.fa-icons {
+		width: 5.4375rem;
+	}
+
+	.fa-2x {
+		font-size: 1rem;
+	}
+
+	.bottom {
+		font-size: 0.625rem;
+		letter-spacing: 0.5px;
+		line-height: 1.5;
+		padding: 1.875rem 0;
+	}
+
+	.contact {
+		flex-direction: column;
+	}
 }
