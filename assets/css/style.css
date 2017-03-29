@@ -51,7 +51,10 @@ html {
 header {
 	background-color: #000000;
 	height: 3.875rem;
-	/*position: fixed;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 10;
 }
 
@@ -81,5 +84,54 @@ header nav ul li a {
 /* Banner-Home */
 
 #banner-home {
-	
+	align-items: center;
+	justify-content: center;
+	background-image: url('../images/dancers-photo.png');
+	background-size: cover;
+	margin-top: 3.875rem;
+	text-align: center;
+}
+
+#banner-home .banner-text {
+	font-family: "Roboto", sans-serif;
+	margin-top: 9.4375rem;
+	margin-bottom: 3.125rem;
+	width: 45rem;
+}
+
+#banner-home h1 {
+	font-size: 3.125rem;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 2.6875rem;
+}
+
+#banner-home p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 5rem;
+
+}
+
+#banner-home a {
+	border-radius: 2px;
+	background-color: #f5a623;
+	color: #ffffff;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+	padding: 1.25rem 3.125rem;
+	text-decoration: none;
+}
+
+/* Banner Two */
+
+#banner-two-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('../images/graffiti-photo.png');
+	background-size: cover;
+	background-repeat: none;
+	/*height: 31.25rem;*/
 }
