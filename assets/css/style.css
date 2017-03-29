@@ -36,6 +36,7 @@
 
 html {
 	color: #ffffff;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 }
 
@@ -44,9 +45,19 @@ html {
 	align-items: center;
 }
 
+a {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 /*** Custom CSS ***/
 
-/* Navbar */
+/* Navbar (used on all pages!) */
 
 header {
 	background-color: #000000;
@@ -71,16 +82,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-	color: #ffffff;
 	font-family: "Open Sans", sans-serif;
-	font-size: 1rem;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 .active {
 	color: #f5a623;
 }
+
+
 /* Banner-Home */
 
 #banner-home {
@@ -93,7 +102,6 @@ header nav ul li a {
 }
 
 #banner-home .banner-text {
-	font-family: "Roboto", sans-serif;
 	margin-top: 9.4375rem;
 	margin-bottom: 3.125rem;
 	width: 45rem;
@@ -116,16 +124,13 @@ header nav ul li a {
 #banner-home a {
 	border-radius: 2px;
 	background-color: #f5a623;
-	color: #ffffff;
 	display: inline-block;
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.375rem;
-	font-weight: bold;
 	padding: 1.25rem 3.125rem;
-	text-decoration: none;
 }
 
-/* Banner Two */
+/* Banner Two Home */
 
 #banner-two-home {
 	align-items: flex-end;
@@ -133,5 +138,101 @@ header nav ul li a {
 	background-image: url('../images/graffiti-photo.png');
 	background-size: cover;
 	background-repeat: none;
-	/*height: 31.25rem;*/
+}
+
+/* Sub banner Home*/
+.sub-banner .banner-text {
+	background-color: rgba(120,73,225,0.9);
+	width: 25rem;
+	margin-top: 6.25rem;
+}
+
+.sub-banner .banner-text .text {
+	margin: 5rem 3rem 3rem 3rem;
+}
+
+.sub-banner .banner-text h2 {
+	font-size: 2.25rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 1.25rem;
+}
+
+.sub-banner .banner-text p {
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+
+.sub-banner .banner-text p:first-of-type {
+	margin-bottom: 1.25rem; 
+}
+
+/* Banner Three Home */
+
+#banner-three-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('../images/fire-photo.png');
+	background-size: cover;
+	background-repeat: none;
+}
+
+#banner-three-home .banner-text {
+	background-color: rgba(173, 74, 226, 0.9);
+}
+
+/* Banner Four Home */
+
+#banner-four-home {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('../images/jump-photo.png');
+	background-size: cover;
+	background-repeat: none;
+}
+
+/* Footer (used on all pages!) */
+
+footer {
+	background-image: url('../images/party-photo.png');
+	background-size: cover;
+	background-repeat: none;
+	flex-direction: column;
+}
+
+footer nav {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	width: 95%;
+}
+
+footer a {
+	font-weight: normal;
+}
+
+.fa-icons {
+	width: 9.375rem;
+	justify-content: space-between;
+}
+
+.bottom {
+	background-color: rgba(0,0,0,0.4);
+	flex-direction: column;
+	font-size: 0.875rem;
+	padding: 5rem 0;
+	width: 100%;
+}
+
+.contact {
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	width: 45%;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+
 }
