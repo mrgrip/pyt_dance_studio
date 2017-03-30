@@ -283,7 +283,7 @@ footer a {
 	padding: 4rem 19%;
 }
 
-.sub-banner-image {
+.sub-banner-dark-about .sub-banner-image {
 	margin-right: 5rem;
 }
 
@@ -303,6 +303,62 @@ footer a {
 	color: #666666;
 	font-size: 1.5rem;
 	line-height: 1.5;
+}
+
+.sub-banner-light-about {
+	background-color: #ffffff;
+	justify-content: center;
+	padding: 4rem 19%;
+}
+
+.sub-banner-light-about .text {
+	flex-direction: column;
+	margin-right: 5rem;
+	text-align: center;
+}
+
+.sub-banner-light-about .text h2 {
+	color: #794ae2;
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.sub-banner-light-about .text p {
+	color: #666666;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.heartclock {
+	padding-bottom: 2rem;
+}
+
+/* Banner Map */
+#banner-map {
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url('../images/map.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#banner-map .text {
+	margin: 3rem 3rem 4rem 3rem;
+}
+
+#banner-map .text p {
+	font-size: 1rem;
+	line-height: 1.3;
+}
+
+#banner-map .text p:first-of-type {
+	margin-bottom: 0;
+}
+
+#banner-map .text p a {
+	font-weight: normal;
 }
 
 /*** MEDIA QUERIES ***/
