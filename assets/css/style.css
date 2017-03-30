@@ -241,13 +241,26 @@ footer a {
 	width: 55%;
 }
 
+.phone-email {
+    width: 40%;
+    justify-content: space-around;
+}
+
 /***** ABOUT PAGE *****/
+
+/* Faculty banenr hack */
+
+#banner-faculty {
+	background-color: #000000;
+}
 
 /* Banner About */
 .banner-about {
 	border-bottom: 10px solid #794ae2;
 	flex-direction: row;
+	line-height: 0;
 	margin-top: 3.875rem;
+	overflow: hidden;
 }
 
 .banner-about-image {
@@ -267,6 +280,7 @@ footer a {
 	color: #794ae2;
 	font-size: 3.125rem;
 	font-weight: bold;
+	line-height: 1;
 	margin-bottom: 4rem;
 }
 
@@ -361,7 +375,67 @@ footer a {
 	font-weight: normal;
 }
 
+/***** CLASSES PAGE *****/
+
+#classes {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 5.3125rem 1.125rem 2.4rem 1.125rem;
+}
+
+.class {
+	margin-bottom: 3.75rem;
+	width: 25rem;
+}
+
+.class h2 {
+	color: rgba(174, 75, 227, 0.9);
+	font-size: 1.875rem;
+	font-weight: bold;
+	margin-bottom: 1.125rem;
+}
+
+.class .time {
+	margin-bottom: 1.125rem;
+}
+
+.class .time, .class .description {
+	color: #000000;
+}
+
+.class .time h4 {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.class .time p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.class .description p {
+	font-size: 0.875rem;
+	line-height: 1.7;
+}
+
 /*** MEDIA QUERIES ***/
+/* Desktop size */
+@media only screen and (max-width: 1235px) {
+	
+	/* CLASSES PAGE */
+	#classes .class {
+		margin-bottom: 2.25rem;
+		width: 18.75rem;
+	}
+
+	.class .time p {
+		font-size: 1.125rem;
+	}
+
+	.class .description p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
 
 /* Tablet size */
 @media only screen and (max-width: 1095px) {
@@ -431,6 +505,11 @@ footer a {
 	.contact {
 		flex-direction: column;
 	}
+
+	.phone-email {
+        display: block;
+        width: initial;
+    }
 
 	/* ABOUT PAGE */
 	/* Banner About*/
@@ -538,6 +617,21 @@ footer a {
 	#banner-map .text p {
 		line-height: 1.6;
 	}
+
+	/*** CLASSES PAGE ***/
+/*	#classes .class {
+		margin-bottom: 2.25rem;
+		width: 18.75rem;
+	}
+
+	.class .time p {
+		font-size: 1.125rem;
+	}
+
+	.class .description p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}*/
 }
 
 @media only screen and (max-width: 890px) {
@@ -636,10 +730,35 @@ footer a {
 	.sub-banner .banner-text .text {
 		margin: 2rem 1.25rem;
 	}
+
+	/*** CLASSES PAGE ***/
+	#classes .class {
+		margin-bottom: 2.5rem;
+		width: 17.5rem;
+	}
+
+	.class .time {
+		margin-bottom: .625rem;
+	}
+
+	.class .time h4 {
+		font-size: 1rem;
+	}
+
+	.class .time p {
+		font-size: .875rem;
+		line-height: 1.7;
+	}
 }
 
 @media only screen and (max-width: 670px) {
 	.banner-about-image {
 		height: 25rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#classes {
+		justify-content: center;
 	}
 }
