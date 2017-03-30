@@ -73,6 +73,10 @@ header {
 	margin: 0 auto 0 3.6875rem;
 }
 
+#brand-mobile {
+	display: none;
+}
+
 header nav ul {
 	margin-right: 3.4375rem;
 }
@@ -234,10 +238,18 @@ footer a {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 2rem;
-	width: 45%;
+	width: 55%;
 }
 
 /*** MEDIA QUERIES ***/
+
+/* Tablet size */
+@media only screen and (max-width: 1095px) {
+	/* Footer */
+	.contact {
+		width: 60%;
+	}
+}
 
 /* Tablet size */
 @media only screen and (max-width: 1024px) {
@@ -296,5 +308,71 @@ footer a {
 
 	.contact {
 		flex-direction: column;
+	}
+}
+
+/* Mobile size */
+@media only screen and (max-width: 770px) {
+	
+	/* Navbar */
+	header {
+		height: 2.5rem
+	}
+
+	#brand {
+		display: none;
+	}
+
+	#brand-mobile {
+		display: block;
+		margin-left: 0.625rem;
+		margin-right: auto;
+	}
+
+	header nav ul {
+		margin-right: 0.625rem
+	}
+
+	header nav ul li:last-child {
+		padding-right: 0;
+	}
+
+	header nav ul li a {
+		font-size: 0.75rem;
+	}
+
+	/* banner */
+	#banner-home {
+		margin-top: 2.5rem;
+	}
+
+	#banner-home .banner-text {
+		margin-top: 7.125rem;
+		width: 18.5rem;
+	}
+
+	#banner-home h1 {
+		font-size: 1.875rem;
+		margin-bottom: 1.625rem;
+	}
+
+	#banner-home p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 3.875rem;
+	}
+
+	/* sub-banner */
+	.sub-banner .banner-text h2 {
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+
+	.sub-banner .banner-text p {
+		font-size: 1rem;
+	}
+
+	.sub-banner .banner-text .text {
+		margin: 2rem 1.25rem;
 	}
 }
