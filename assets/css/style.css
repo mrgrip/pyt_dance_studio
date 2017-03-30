@@ -244,7 +244,7 @@ footer a {
 /***** ABOUT PAGE *****/
 
 /* Banner About */
-#banner-about {
+.banner-about {
 	border-bottom: 10px solid #794ae2;
 	flex-direction: row;
 	margin-top: 3.875rem;
@@ -374,6 +374,8 @@ footer a {
 /* Tablet size */
 @media only screen and (max-width: 1024px) {
 	
+	/* HOME PAGE */
+
 	/* banner home */
 	#banner-home .banner-text {
 		width: 31.25rem;
@@ -429,6 +431,142 @@ footer a {
 	.contact {
 		flex-direction: column;
 	}
+
+	/* ABOUT PAGE */
+	/* Banner About*/
+	.banner-about {
+		flex-direction: column;
+	}
+
+	.banner-about-image {
+		width: 100%;
+	}
+
+	#banner-faculty .banner-about-text {
+		background-color: rgba(0,0,0,1);
+	}
+
+	.banner-about-text {
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 2rem 0;
+		z-index: 10;
+	}
+
+	.banner-about-text .text {
+		width: 80%;
+	}
+
+	.banner-about-text h1 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.banner-about-text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	/* sub banners about */
+	.sub-banner-dark-about {
+		flex-direction: column;
+		padding: 1.875rem 19%;
+	}
+
+	.sub-banner-dark-about .sub-banner-image {
+		margin-right: 0;
+		margin-bottom: 1rem;
+		height: 6.25rem;
+	}
+
+	.sub-banner-dark-about .sub-banner-image img {
+		height: 100%;
+		width: auto;
+	}
+
+	.sub-banner-dark-about .text h2 {
+		font-size: 1.75rem;
+	}
+
+	.sub-banner-dark-about .text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.sub-banner-light-about {
+		flex-direction: column-reverse;
+		padding: 1.875rem 19%;
+	}
+
+	.sub-banner-light-about .sub-banner-image {
+		margin-bottom: 1rem;
+		height: 6.25rem;
+	}
+
+	.sub-banner-light-about .sub-banner-image img {
+		height: 100%;
+		width: auto;
+	}
+
+	.sub-banner-light-about .text {
+		margin-right: 0;
+	}
+
+	.sub-banner-light-about .text h2 {
+		font-size: 1.75rem;
+	}
+
+	.sub-banner-light-about .text p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+	.heartclock {
+		padding-bottom: 0;
+	}
+
+	/* Map banner */
+	#banner-map .banner-text {
+		width: 60%;
+	}
+
+	#banner-map .text {
+		margin: 2rem 2rem 1rem 2rem;
+	}
+
+	#banner-map .text p {
+		line-height: 1.6;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+	#banner-about {
+		background-image: url('../images/workout-photo.png');
+	}
+
+	#banner-classes {
+		background-image: url('../images/classes-photo.png');
+	}
+
+	#banner-faculty {
+		background-image: url('../images/faculty-photo.png');
+		background-position: left center;
+	}
+
+	#banner-faculty .banner-about-text {
+		background-color: rgba(0,0,0,0.7);
+	}
+
+	.banner-about {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.banner-about-image {
+		visibility: hidden;
+	}
 }
 
 /* Mobile size */
@@ -453,6 +591,10 @@ footer a {
 		margin-right: 0.625rem
 	}
 
+	header nav ul li {
+		padding-right: 2.25rem;
+	}
+
 	header nav ul li:last-child {
 		padding-right: 0;
 	}
@@ -462,7 +604,7 @@ footer a {
 	}
 
 	/* banner home */
-	#banner-home {
+	#banner-home, .banner-about {
 		margin-top: 2.5rem;
 	}
 
@@ -482,7 +624,6 @@ footer a {
 		margin-bottom: 3.875rem;
 	}
 
-	/* sub-banner */
 	.sub-banner .banner-text h2 {
 		font-size: 1.25rem;
 		line-height: 1.2;
@@ -494,5 +635,11 @@ footer a {
 
 	.sub-banner .banner-text .text {
 		margin: 2rem 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.banner-about-image {
+		height: 25rem;
 	}
 }
